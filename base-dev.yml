@@ -1,0 +1,16 @@
+server:
+  port: 9001 #端口号
+spring:
+  application:
+    name: base #服务名
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf-8
+    data-username: root
+    data-password: root
+  jpa:
+    database: mysql #指明你使用的是啥数据库
+    show-sql: true #打印sql语句
+    generate-ddl: true #update false:none
+  redis:
+    host: 127.0.0.1,127.0.0.1,127.0.0.1
